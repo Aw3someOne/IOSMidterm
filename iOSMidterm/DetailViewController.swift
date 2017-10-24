@@ -40,6 +40,22 @@ class DetailViewController: UIViewController {
         }
     }
 
-
+    var childViewController: NoteTableViewController?
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "NoteTableSegue" {
+            if let childVC = segue.destination as? NoteTableViewController {
+                childVC.detailItem = detailItem
+                childViewController = childVC
+            }
+        }
+    }
+    @IBAction func createNoteButtonPressed(_ sender: Any) {
+        if let category = detailItem {
+            category.notes.insert(Note(title: "New Note", body: "Descriptive text here"), at: 0)
+        }
+        let indexPath = IndexPath(row: 0, section: 0)
+        childViewController?.tableView.insertRows(at: [indexPath], with: .automatic)
+    }
+    
 }
 
