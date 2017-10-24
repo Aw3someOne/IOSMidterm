@@ -15,6 +15,8 @@
 		DCBDBCE51F9EB27B00CB509C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBDBCE31F9EB27B00CB509C /* LaunchScreen.storyboard */; };
 		DCBDBCF01F9EB27B00CB509C /* iOSMidtermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDBCEF1F9EB27B00CB509C /* iOSMidtermTests.swift */; };
 		DCBDBCFB1F9EB27B00CB509C /* iOSMidtermUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDBCFA1F9EB27B00CB509C /* iOSMidtermUITests.swift */; };
+		DCBDBD091F9EB30000CB509C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDBD081F9EB30000CB509C /* Category.swift */; };
+		DCBDBD0B1F9EB30A00CB509C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDBD0A1F9EB30A00CB509C /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DCBDBCF61F9EB27B00CB509C /* iOSMidtermUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMidtermUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBDBCFA1F9EB27B00CB509C /* iOSMidtermUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMidtermUITests.swift; sourceTree = "<group>"; };
 		DCBDBCFC1F9EB27B00CB509C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCBDBD081F9EB30000CB509C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DCBDBD0A1F9EB30A00CB509C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				DCBDBCE11F9EB27B00CB509C /* Assets.xcassets */,
 				DCBDBCE31F9EB27B00CB509C /* LaunchScreen.storyboard */,
 				DCBDBCE61F9EB27B00CB509C /* Info.plist */,
+				DCBDBD081F9EB30000CB509C /* Category.swift */,
+				DCBDBD0A1F9EB30A00CB509C /* Note.swift */,
 			);
 			path = iOSMidterm;
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCBDBD0B1F9EB30A00CB509C /* Note.swift in Sources */,
 				DCBDBCDD1F9EB27B00CB509C /* DetailViewController.swift in Sources */,
 				DCBDBCDB1F9EB27B00CB509C /* MasterViewController.swift in Sources */,
 				DCBDBCD91F9EB27B00CB509C /* AppDelegate.swift in Sources */,
+				DCBDBD091F9EB30000CB509C /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
