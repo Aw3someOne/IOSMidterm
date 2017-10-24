@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC3600311F9EC4B70026A0BB /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3600301F9EC4B70026A0BB /* NoteTableViewController.swift */; };
+		DC3600331F9ECB100026A0BB /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3600321F9ECB100026A0BB /* NoteTableViewCell.swift */; };
 		DCBDBCD91F9EB27B00CB509C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDBCD81F9EB27B00CB509C /* AppDelegate.swift */; };
 		DCBDBCDB1F9EB27B00CB509C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDBCDA1F9EB27B00CB509C /* MasterViewController.swift */; };
 		DCBDBCDD1F9EB27B00CB509C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDBCDC1F9EB27B00CB509C /* DetailViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		DC3600301F9EC4B70026A0BB /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
+		DC3600321F9ECB100026A0BB /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		DCBDBCD51F9EB27B00CB509C /* iOSMidterm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMidterm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBDBCD81F9EB27B00CB509C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCBDBCDA1F9EB27B00CB509C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				DCBDBCDC1F9EB27B00CB509C /* DetailViewController.swift */,
 				DC3600301F9EC4B70026A0BB /* NoteTableViewController.swift */,
 				DCBDBCDE1F9EB27B00CB509C /* Main.storyboard */,
+				DC3600321F9ECB100026A0BB /* NoteTableViewCell.swift */,
 				DCBDBCE11F9EB27B00CB509C /* Assets.xcassets */,
 				DCBDBCE31F9EB27B00CB509C /* LaunchScreen.storyboard */,
 				DCBDBCE61F9EB27B00CB509C /* Info.plist */,
@@ -276,6 +279,7 @@
 				DCBDBCDB1F9EB27B00CB509C /* MasterViewController.swift in Sources */,
 				DC3600311F9EC4B70026A0BB /* NoteTableViewController.swift in Sources */,
 				DCBDBCD91F9EB27B00CB509C /* AppDelegate.swift in Sources */,
+				DC3600331F9ECB100026A0BB /* NoteTableViewCell.swift in Sources */,
 				DCBDBD091F9EB30000CB509C /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

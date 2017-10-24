@@ -74,31 +74,31 @@
             </objects>
             <point key="canvasLocation" x="708" y="128.18590704647679"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Note Table View Controller-->
         <scene sceneID="K2h-89-dEm">
             <objects>
-                <tableViewController id="Wix-Rf-57U" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1sq-Qk-nYm">
+                <tableViewController id="Wix-Rf-57U" customClass="NoteTableViewController" customModule="iOSMidterm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1sq-Qk-nYm">
                         <rect key="frame" x="0.0" y="0.0" width="355" height="417"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="gwS-E2-jXp">
-                                <rect key="frame" x="0.0" y="28" width="355" height="72"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="100" id="gwS-E2-jXp" customClass="NoteTableViewCell" customModule="iOSMidterm" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="355" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gwS-E2-jXp" id="sV7-un-wxB">
-                                    <rect key="frame" x="0.0" y="0.0" width="355" height="71.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwX-SZ-jEQ">
-                                            <rect key="frame" x="8" y="8" width="34" height="21"/>
+                                            <rect key="frame" x="8" y="8" width="339" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgx-NJ-seB">
-                                            <rect key="frame" x="8" y="42" width="88" height="21"/>
+                                            <rect key="frame" x="8" y="42" width="339" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -106,6 +106,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="cgx-NJ-seB" id="af8-UW-Nh2"/>
+                                    <outlet property="titleLabel" destination="PwX-SZ-jEQ" id="1VL-E9-mO7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

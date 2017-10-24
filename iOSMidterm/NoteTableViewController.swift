@@ -37,15 +37,16 @@ class NoteTableViewController: UITableViewController {
         return (detailItem?.notes.count)!
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "noteCell", for: indexPath) as! NoteTableViewCell
 
         // Configure the cell...
+        let object = detailItem?.notes[indexPath.row]
+        cell.titleLabel.text = object?.title
+        cell.descriptionLabel.text = object?.body
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
